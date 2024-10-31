@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/linkBudgetFragment"
+        android:title="@string/linkbudget_menu_tittle"
+        android:icon="@drawable/ic_link_budget"/>
+
+    <item
+        android:id="@+id/freeSpaceFragment"
+        android:title="@string/free_space_menu_tittle"
+        android:icon="@drawable/ic_free_space"/>
+
+    <item
+        android:id="@+id/fresnelZoneFragment"
+        android:title="@string/fresnel_menu_tittle"
+        android:icon="@drawable/ic_fresnel_zone"/>
+
+</menu>

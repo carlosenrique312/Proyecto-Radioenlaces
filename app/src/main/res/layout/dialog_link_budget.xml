@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="250dp"
+    android:padding="16dp"
+    android:background="@color/primary_dark"
+    android:layout_height="wrap_content">
+
+    <RadioGroup
+        android:id="@+id/rgCategories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rbCAT5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="UTP CAT5(0.08db/m)"
+            android:checked="true"
+            android:textColor="@color/accent"
+            android:buttonTint="@color/red"/>
+
+        <RadioButton
+            android:id="@+id/rbCAT5e"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="UTP CAT5a(0.07db/m)"
+            android:textColor="@color/accent"
+            android:buttonTint="@color/blue"/>
+
+        <RadioButton
+            android:id="@+id/rbCAT6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="UTP CAT6(0.06db/m)"
+            android:textColor="@color/accent"
+            android:buttonTint="@color/secondary"/>
+
+        <RadioButton
+            android:id="@+id/rbCAT6a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="UTP CAT6e(0.05db/m)"
+            android:textColor="@color/accent"
+            android:buttonTint="@color/secondary"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnAddTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="aceptar"
+        android:backgroundTint="@color/blue"/>
+
+</LinearLayout>

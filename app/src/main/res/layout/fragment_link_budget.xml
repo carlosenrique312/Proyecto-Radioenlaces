@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginVertical="5dp"
+        android:fontFamily="@font/prata"
+        android:gravity="center"
+        android:text="@string/radio_link_view_tittle"
+        android:textAllCaps="true"
+        android:textColor="@color/accent"
+        android:textSize="15sp" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:cardBackgroundColor="@color/primary_dark"
+        app:cardCornerRadius="16dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:id="@+id/tvTrasmission"
+                style="@style/tv_tittle_link_budget_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/radio_link_transmission"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/etOutputPower"
+                style="@style/edit_text_link_budget_style"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:hint="@string/radio_link_transmission_output_power"
+                android:importantForAutofill="no"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvTrasmission" />
+
+            <EditText
+                android:id="@+id/etAntennaGain"
+                style="@style/edit_text_link_budget_style"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:hint="@string/radio_link_transmission_antenna_gain"
+                android:importantForAutofill="no"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/etOutputPower" />
+
+            <Button
+                android:id="@+id/btn_wire_transmission"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:textSize="10sp"
+                android:text="perdida de cable"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/etAntennaGain" />
+
+            <CheckBox
+                android:id="@+id/antennaRD"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:text="Rocket Dish 5G34"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/tvTrasmission"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <CheckBox
+                android:id="@+id/antennaLTB"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:text="LiteBeam 5AC"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/tvTrasmission"
+                app:layout_constraintTop_toBottomOf="@id/antennaRD" />
+
+            <Button
+                android:id="@+id/btnDatasheet"
+                style="@style/btn_datasheet_link_budget_style"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="@string/radio_link_transmission_datasheet"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/tvTrasmission"
+                app:layout_constraintTop_toBottomOf="@id/antennaLTB" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:cardBackgroundColor="@color/primary_dark"
+        app:cardCornerRadius="16dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/tvPropagation"
+                style="@style/tv_tittle_link_budget_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/radio_link_propagation"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/etFreeSpaceLoss"
+                style="@style/edit_text_link_budget_style"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/accent"
+                android:hint="@string/radio_link_propagation_free_space_loss"
+                android:importantForAutofill="no"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvPropagation" />
+
+            <TextView
+                android:id="@+id/tvNavFreeSpace"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Calcular aqui"
+                android:textColor="@color/red"
+                android:textSize="6sp"
+                android:textAlignment="center"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/etFreeSpaceLoss" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:cardBackgroundColor="@color/primary_dark"
+        app:cardCornerRadius="16dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/tvReception"
+                style="@style/tv_tittle_link_budget_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/radio_link_recepcion"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/etAntennaGainReception"
+                style="@style/edit_text_link_budget_style"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:hint="@string/radio_link_reception_antenna_gain"
+                android:importantForAutofill="no"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvReception" />
+
+            <EditText
+                android:id="@+id/etReceiverSensitivity"
+                style="@style/edit_text_link_budget_style"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:hint="@string/radio_link_reception_receiver"
+                android:importantForAutofill="no"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/etAntennaGainReception" />
+
+            <Button
+                android:id="@+id/btn_wire_reception"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="perdida de cable"
+                android:textSize="10sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/etReceiverSensitivity"/>
+
+            <CheckBox
+                android:id="@+id/antennaRP"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:text="Rocket Prism 5AC GEN2"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/tvReception"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <CheckBox
+                android:id="@+id/antennaPWB"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:text="PowerBeam 5AC"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/tvReception"
+                app:layout_constraintTop_toBottomOf="@id/antennaRP" />
+
+            <Button
+                android:id="@+id/btnDatasheetTwo"
+                style="@style/btn_datasheet_link_budget_style"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="15dp"
+                android:text="@string/radio_link_transmission_datasheet"
+                app:layout_constraintStart_toEndOf="@id/tvReception"
+                app:layout_constraintTop_toBottomOf="@id/antennaPWB"
+                app:layout_constraintEnd_toEndOf="parent"/>
+            />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btnCalculateLinkBudget"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_margin="2dp"
+        android:backgroundTint="@color/secondary"
+        android:text="@string/radio_link_calculate_buttton"
+        android:textSize="10sp"/>
+
+</LinearLayout>

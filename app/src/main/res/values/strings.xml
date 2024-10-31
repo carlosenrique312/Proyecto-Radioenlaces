@@ -1,0 +1,85 @@
+<resources>
+
+    <string name="app_name">Radioenlaces App</string>
+
+    <string name="radio_link_view_tittle">Presupuesto de radio enlace</string>
+    <string name="radio_link_transmission">Trasmision</string>
+    <string name="radio_link_transmission_output_power">Potencia de salida</string>
+    <string name="radio_link_transmission_antenna_gain">Ganancia de la antena</string>
+    <string name="radio_link_transmission_wire_loss">Perdida de cable</string>
+    <string name="radio_link_transmission_datasheet">Datasheet</string>
+    <string name="radio_link_transmission_manual">Manual</string>
+
+    <string name="radio_link_propagation">Propagacion</string>
+    <string name="radio_link_propagation_free_space_loss">Perdida espacio libre</string>
+
+    <string name="radio_link_recepcion">Recepcion</string>
+    <string name="radio_link_reception_antenna_gain">Ganancia de la antena</string>
+    <string name="radio_link_reception_receiver">Sensibilidad receptor</string>
+    <string name="radio_link_reception_wire_loss">Perdida de cable</string>
+    <string name="radio_link_reception_datasheet">Datasheet</string>
+
+    <string name="radio_link_calculate_buttton">Calcular</string>
+
+    <string name="radio_link_datasheet">Datasheet</string>
+
+
+    <string-array name="wires">
+        <item>UTP CAT5(0.08db/m)</item>
+        <item>UTP CAT6(0.06db/m)</item>
+    </string-array>
+
+    <string-array name="frequencies">
+        <item>900MHz</item>
+        <item>2400MHz</item>
+        <item>5800MHz</item>
+    </string-array>
+
+
+    <string-array name="antennas">
+        <item>Rocket Dish 5G34</item>
+        <item>LiteBeam 5AC</item>
+    </string-array>
+
+    <string-array name="antennastwo">
+        <item>Rocket Prism 5AC GEN2</item>
+        <item>PowerBeam 5AC</item>
+    </string-array>
+
+
+    <string name="free_space_calculate_button">Calcular</string>
+    <string name="free_space_distance_edit_text">DIstancia (Km)</string>
+    <string name="free_space_tittle">Calculadora perdida en el espacio libre</string>
+
+
+    <string name="fresnel_zone_calculate_button">Calcular</string>
+    <string name="fresnel_zone_first_distance_edit_text">DIstancia (Km)</string>
+    <string name="fresnel_zone_tittle">Calculadora zona Fresnel</string>
+
+
+    <string name="tittlefslunderfifty">Excelente</string>
+    <string name="underfiftydescription">La conexión es de alta calidad, con pocas obstrucciones, lo que permite una comunicación clara y rápida.</string>
+
+    <string name="tittlefsluptofifty">Aceptable</string>
+    <string name="fsluptofiftydescription"> La calidad es aceptable, pero puede haber obstrucciones que causen una conexión intermitente.</string>
+
+    <string name="tittlefsluptohundred">Regular</string>
+    <string name="uptohundreddescription">Hay mucha atenuación, probablemente por la distancia o varias obstrucciones.</string>
+
+
+    <string name="tittlelinkbudgetunderhundred">Aceptable</string>
+    <string name="inkbudgetunderhundreddescription">La señal es adecuada, pero su calidad depende de las condiciones ambientales y obstrucciones.</string>
+
+    <string name="tittlelinkbudgetuptohundred">Excelente</string>
+    <string name="inkbudgetuptohundreddescription">Tienes un amplio margen de señal, asegurando una conexión estable y de alta calidad, capaz de manejar interferencias.</string>
+
+
+    <string name="linkbudget_menu_tittle">Enlaces</string>
+    <string name="free_space_menu_tittle">Espacio</string>
+    <string name="fresnel_menu_tittle">Fresnel</string>
+    <string name="recalculate_button">Recalcular</string>
+    <string name="tittle_result">Tu Resultado</string>
+
+    <string name="fresnel_result_description">Máximo radio en metros de la primera zona de Fresnel.</string>
+
+</resources>
