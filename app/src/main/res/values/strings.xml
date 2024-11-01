@@ -79,7 +79,15 @@
     <string name="fresnel_menu_tittle">Fresnel</string>
     <string name="recalculate_button">Recalcular</string>
     <string name="tittle_result">Tu Resultado</string>
+    <string name="button_wire">Perdida de cable</string>
+    <string name="button_wire_two">Perdida de cable</string>
+    <string name="Rocket_Dish_5G34">Rocket Dish 5G34</string>
+    <string name="LiteBeam_5AC">LiteBeam 5AC</string>
+    <string name="Rocket_Prism_5AC">Rocket Prism 5AC GEN2</string>
+    <string name="PowerBeam_5AC">PowerBeam 5AC</string>
+    <string name="text_calculate_here">Calcular aqui</string>
 
     <string name="fresnel_result_description">Máximo radio en metros de la primera zona de Fresnel.</string>
+    <string name="free_space_description">La pérdida en el espacio libre (FSL o FSPL) es la atenuación de la energía de radio que se produce cuando viaja por el aire entre dos antenas</string>
 
 </resources>

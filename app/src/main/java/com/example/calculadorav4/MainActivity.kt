@@ -2,6 +2,7 @@ package com.example.calculadorav4
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
@@ -16,6 +17,19 @@ class MainActivity : AppCompatActivity() {
         binding=ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         initUI()
+        initListeners()
+    }
+
+    private fun initListeners() {
+        binding.switchDarkMode.setOnCheckedChangeListener { _, value ->
+
+            if (value){
+                enableDarkMode()
+            }else{
+                disableDarkMode()
+            }
+
+        }
     }
 
     private fun initUI() {
@@ -26,5 +40,13 @@ class MainActivity : AppCompatActivity() {
         val navHost=supportFragmentManager.findFragmentById(R.id.fragmentContainerView) as NavHostFragment
         navController=navHost.navController
         binding.bottonNavViews.setupWithNavController(navController)
+    }
+    private fun enableDarkMode(){
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+        delegate.applyDayNight()
+    }
+    private fun disableDarkMode(){
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+        delegate.applyDayNight()
     }
 }

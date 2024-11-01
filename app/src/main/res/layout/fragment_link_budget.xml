@@ -41,6 +41,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/radio_link_transmission"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -49,6 +50,7 @@
                 style="@style/edit_text_link_budget_style"
                 android:layout_width="120dp"
                 android:layout_height="50dp"
+                android:layout_marginTop="16dp"
                 android:hint="@string/radio_link_transmission_output_power"
                 android:importantForAutofill="no"
                 app:layout_constraintStart_toStartOf="parent"
@@ -66,43 +68,45 @@
 
             <Button
                 android:id="@+id/btn_wire_transmission"
+                style="@style/btn_datasheet_link_budget_style"
                 android:layout_width="wrap_content"
-                android:layout_height="40dp"
-                android:textSize="10sp"
-                android:text="perdida de cable"
+                android:layout_height="48dp"
+                android:text="@string/button_wire"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/etAntennaGain" />
 
             <CheckBox
                 android:id="@+id/antennaRD"
                 android:layout_width="150dp"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:layout_marginStart="15dp"
-                android:text="Rocket Dish 5G34"
-                android:textSize="10sp"
+                android:layout_marginTop="40dp"
+                android:text="@string/Rocket_Dish_5G34"
+                android:textSize="11sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@id/tvTrasmission"
+                app:layout_constraintStart_toEndOf="@id/etOutputPower"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <CheckBox
                 android:id="@+id/antennaLTB"
                 android:layout_width="150dp"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:layout_marginStart="15dp"
-                android:text="LiteBeam 5AC"
-                android:textSize="10sp"
+                android:text="@string/LiteBeam_5AC"
+                android:textSize="11sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@id/tvTrasmission"
+                app:layout_constraintStart_toEndOf="@id/etOutputPower"
                 app:layout_constraintTop_toBottomOf="@id/antennaRD" />
 
             <Button
                 android:id="@+id/btnDatasheet"
                 style="@style/btn_datasheet_link_budget_style"
                 android:layout_width="wrap_content"
-                android:layout_height="40dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="10dp"
                 android:text="@string/radio_link_transmission_datasheet"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@id/tvTrasmission"
+                app:layout_constraintStart_toEndOf="@id/etOutputPower"
                 app:layout_constraintTop_toBottomOf="@id/antennaLTB" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -127,6 +131,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/radio_link_propagation"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -138,6 +143,7 @@
                 android:backgroundTint="@color/accent"
                 android:hint="@string/radio_link_propagation_free_space_loss"
                 android:importantForAutofill="no"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/tvPropagation" />
 
@@ -145,10 +151,12 @@
                 android:id="@+id/tvNavFreeSpace"
                 android:layout_width="120dp"
                 android:layout_height="wrap_content"
-                android:text="Calcular aqui"
-                android:textColor="@color/red"
-                android:textSize="6sp"
+                android:text="@string/text_calculate_here"
                 android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/accent"
+                android:textSize="8sp"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/etFreeSpaceLoss" />
 
@@ -174,12 +182,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/radio_link_recepcion"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <EditText
                 android:id="@+id/etAntennaGainReception"
                 style="@style/edit_text_link_budget_style"
+                android:layout_marginTop="16dp"
                 android:layout_width="120dp"
                 android:layout_height="50dp"
                 android:hint="@string/radio_link_reception_antenna_gain"
@@ -199,46 +209,48 @@
 
             <Button
                 android:id="@+id/btn_wire_reception"
+                style="@style/btn_datasheet_link_budget_style"
                 android:layout_width="wrap_content"
-                android:layout_height="40dp"
-                android:text="perdida de cable"
-                android:textSize="10sp"
+                android:layout_height="48dp"
+                android:text="@string/button_wire"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/etReceiverSensitivity"/>
+                app:layout_constraintTop_toBottomOf="@id/etReceiverSensitivity" />
 
             <CheckBox
                 android:id="@+id/antennaRP"
                 android:layout_width="150dp"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:layout_marginStart="15dp"
-                android:text="Rocket Prism 5AC GEN2"
-                android:textSize="10sp"
+                android:layout_marginTop="40dp"
+                android:text="@string/Rocket_Prism_5AC"
+                android:textSize="11sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@id/tvReception"
+                app:layout_constraintStart_toEndOf="@id/etAntennaGainReception"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <CheckBox
                 android:id="@+id/antennaPWB"
                 android:layout_width="150dp"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:layout_marginStart="15dp"
-                android:text="PowerBeam 5AC"
-                android:textSize="10sp"
+                android:text="@string/PowerBeam_5AC"
+                android:textSize="11sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@id/tvReception"
+                app:layout_constraintStart_toEndOf="@id/etAntennaGainReception"
                 app:layout_constraintTop_toBottomOf="@id/antennaRP" />
 
             <Button
                 android:id="@+id/btnDatasheetTwo"
                 style="@style/btn_datasheet_link_budget_style"
                 android:layout_width="wrap_content"
-                android:layout_height="40dp"
+                android:layout_height="48dp"
                 android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
                 android:text="@string/radio_link_transmission_datasheet"
-                app:layout_constraintStart_toEndOf="@id/tvReception"
-                app:layout_constraintTop_toBottomOf="@id/antennaPWB"
-                app:layout_constraintEnd_toEndOf="parent"/>
-            />
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/etReceiverSensitivity"
+                app:layout_constraintTop_toBottomOf="@id/antennaPWB" />
+
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -246,11 +258,10 @@
 
     <Button
         android:id="@+id/btnCalculateLinkBudget"
+        style="@style/btn_datasheet_link_budget_style"
         android:layout_width="wrap_content"
-        android:layout_height="40dp"
+        android:layout_height="48dp"
         android:layout_margin="2dp"
-        android:backgroundTint="@color/secondary"
-        android:text="@string/radio_link_calculate_buttton"
-        android:textSize="10sp"/>
+        android:text="@string/radio_link_calculate_buttton" />
 
 </LinearLayout>
