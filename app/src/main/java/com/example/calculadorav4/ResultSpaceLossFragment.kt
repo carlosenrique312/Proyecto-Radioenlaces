@@ -39,19 +39,34 @@ class ResultSpaceLossFragment : Fragment() {
         when (result) {
             in 100.00..139.99 -> {
                 binding.tvRangeFsl.text = getString(R.string.tittlefslunderfifty)
-                binding.tvRangeFsl.setTextColor(ContextCompat.getColor(requireContext(), R.color.blue))
+                binding.tvRangeFsl.setTextColor(
+                    ContextCompat.getColor(
+                        requireContext(),
+                        R.color.blue
+                    )
+                )
                 binding.tvFslDescription.text = getString(R.string.underfiftydescription)
             }
 
             in 140.00..189.99 -> {
                 binding.tvRangeFsl.text = getString(R.string.tittlefsluptofifty)
-                binding.tvRangeFsl.setTextColor(ContextCompat.getColor(requireContext(), R.color.secondary))
+                binding.tvRangeFsl.setTextColor(
+                    ContextCompat.getColor(
+                        requireContext(),
+                        R.color.secondary
+                    )
+                )
                 binding.tvFslDescription.text = getString(R.string.fsluptofiftydescription)
             }
 
             in 190.00..399.99 -> {
                 binding.tvRangeFsl.text = getString(R.string.tittlefsluptohundred)
-                binding.tvRangeFsl.setTextColor(ContextCompat.getColor(requireContext(), R.color.red))
+                binding.tvRangeFsl.setTextColor(
+                    ContextCompat.getColor(
+                        requireContext(),
+                        R.color.red
+                    )
+                )
                 binding.tvFslDescription.text = getString(R.string.uptohundreddescription)
             }
         }

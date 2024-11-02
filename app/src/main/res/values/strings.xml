@@ -24,26 +24,10 @@
     <string name="radio_link_datasheet">Datasheet</string>
 
 
-    <string-array name="wires">
-        <item>UTP CAT5(0.08db/m)</item>
-        <item>UTP CAT6(0.06db/m)</item>
-    </string-array>
-
     <string-array name="frequencies">
         <item>900MHz</item>
         <item>2400MHz</item>
         <item>5800MHz</item>
-    </string-array>
-
-
-    <string-array name="antennas">
-        <item>Rocket Dish 5G34</item>
-        <item>LiteBeam 5AC</item>
-    </string-array>
-
-    <string-array name="antennastwo">
-        <item>Rocket Prism 5AC GEN2</item>
-        <item>PowerBeam 5AC</item>
     </string-array>
 
 
@@ -79,13 +63,20 @@
     <string name="fresnel_menu_tittle">Fresnel</string>
     <string name="recalculate_button">Recalcular</string>
     <string name="tittle_result">Tu Resultado</string>
+
     <string name="button_wire">Perdida de cable</string>
-    <string name="button_wire_two">Perdida de cable</string>
-    <string name="Rocket_Dish_5G34">Rocket Dish 5G34</string>
+
+    <string name="Rocket_Dish_5G34_and_Rocket_Prism_5AC">Rocket Dish 5G34 + Rocket Prism 5AC GEN2</string>
     <string name="LiteBeam_5AC">LiteBeam 5AC</string>
     <string name="Rocket_Prism_5AC">Rocket Prism 5AC GEN2</string>
     <string name="PowerBeam_5AC">PowerBeam 5AC</string>
     <string name="text_calculate_here">Calcular aqui</string>
+    <string name="rb_wire_5">UTP CAT5(0.08db/m)</string>
+    <string name="rb_wire_5e">UTP CAT5e(0.07db/m)</string>
+    <string name="rb_wire_6">UTP CAT6(0.06db/m)</string>
+    <string name="rb_wire_6a">UTP CAT6a(0.05db/m)</string>
+    <string name="dialog_button_text">Aceptar</string>
+
 
     <string name="fresnel_result_description">Máximo radio en metros de la primera zona de Fresnel.</string>
     <string name="free_space_description">La pérdida en el espacio libre (FSL o FSPL) es la atenuación de la energía de radio que se produce cuando viaja por el aire entre dos antenas</string>

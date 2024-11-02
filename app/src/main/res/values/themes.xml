@@ -12,6 +12,7 @@
         <item name="android:textColorHint">@color/accent</item>
         <item name="android:inputType">text</item>
         <item name="android:textSize">11sp</item>
+        <item name="android:maxLength">8</item>
     </style>
 
     <style name="tv_tittle_link_budget_style">
@@ -30,7 +31,7 @@
     </style>
 
     <style name="tvDescriptionViews">
-        <item name="android:textSize">20sp</item>
+        <item name="android:textSize">14sp</item>
         <item name="android:textColor">@color/accent</item>
         <item name="fontFamily">@font/ibmplexserif</item>
         <item name="android:textAlignment">center</item>

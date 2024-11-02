@@ -49,7 +49,11 @@ class FresnelZoneFragment : Fragment() {
                 navigateToResult(result)
             } else {
                 // Mostrar un Toast como mensaje de error
-                Toast.makeText(requireContext(), "Ingresa un número positivo válido", Toast.LENGTH_SHORT).show()
+                Toast.makeText(
+                    requireContext(),
+                    "Ingresa un número positivo válido",
+                    Toast.LENGTH_SHORT
+                ).show()
             }
         }
     }

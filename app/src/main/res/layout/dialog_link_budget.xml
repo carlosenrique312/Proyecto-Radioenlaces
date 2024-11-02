@@ -15,7 +15,7 @@
             android:id="@+id/rbCAT5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="UTP CAT5(0.08db/m)"
+            android:text="@string/rb_wire_5"
             android:checked="true"
             android:textColor="@color/accent"
             android:buttonTint="@color/red"/>
@@ -24,7 +24,7 @@
             android:id="@+id/rbCAT5e"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="UTP CAT5a(0.07db/m)"
+            android:text="@string/rb_wire_5e"
             android:textColor="@color/accent"
             android:buttonTint="@color/blue"/>
 
@@ -32,7 +32,7 @@
             android:id="@+id/rbCAT6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="UTP CAT6(0.06db/m)"
+            android:text="@string/rb_wire_6"
             android:textColor="@color/accent"
             android:buttonTint="@color/secondary"/>
 
@@ -40,17 +40,27 @@
             android:id="@+id/rbCAT6a"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="UTP CAT6e(0.05db/m)"
+            android:text="@string/rb_wire_6a"
             android:textColor="@color/accent"
             android:buttonTint="@color/secondary"/>
 
     </RadioGroup>
 
+    <EditText
+        android:id="@+id/etMeters"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:importantForAutofill="no"
+        android:textAlignment="center"
+        android:hint="Metros de cable"
+        android:maxLength="5"/>
+
     <Button
         android:id="@+id/btnAddTask"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="aceptar"
-        android:backgroundTint="@color/blue"/>
+        android:text="@string/dialog_button_text"
+        style="@style/btn_datasheet_link_budget_style"/>
 
 </LinearLayout>
