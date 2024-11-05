@@ -4,7 +4,7 @@
 
     <string name="radio_link_view_tittle">Presupuesto de radio enlace</string>
     <string name="radio_link_transmission">Trasmision</string>
-    <string name="radio_link_transmission_output_power">Potencia de salida</string>
+    <string name="radio_link_transmission_output_power">Potencia del Radio</string>
     <string name="radio_link_transmission_antenna_gain">Ganancia de la antena</string>
     <string name="radio_link_transmission_wire_loss">Perdida de cable</string>
     <string name="radio_link_transmission_datasheet">Datasheet</string>
@@ -33,12 +33,14 @@
 
     <string name="free_space_calculate_button">Calcular</string>
     <string name="free_space_distance_edit_text">DIstancia (Km)</string>
-    <string name="free_space_tittle">Calculadora perdida en el espacio libre</string>
+    <string name="free_space_tittle">Perdida en espacio libre</string>
 
 
     <string name="fresnel_zone_calculate_button">Calcular</string>
-    <string name="fresnel_zone_first_distance_edit_text">DIstancia (Km)</string>
-    <string name="fresnel_zone_tittle">Calculadora zona Fresnel</string>
+    <string name="fresnel_zone_first_distance_edit_text">Distancia trasmisor al obstaculo (Km)</string>
+    <string name="fresnel_zone_second_distance_edit_text">Distancia receptor al obstaculo (Km)</string>
+    <string name="fresnel_zone_total_distance_edit_text">DIstancia total (Km)</string>
+    <string name="fresnel_zone_tittle">Cálculo de la zona Fresnel</string>
 
 
     <string name="tittlefslunderfifty">Excelente</string>
@@ -51,8 +53,8 @@
     <string name="uptohundreddescription">Hay mucha atenuación, probablemente por la distancia o varias obstrucciones.</string>
 
 
-    <string name="tittlelinkbudgetunderhundred">Aceptable</string>
-    <string name="inkbudgetunderhundreddescription">La señal es adecuada, pero su calidad depende de las condiciones ambientales y obstrucciones.</string>
+    <string name="tittle_link_budget_result">Presupuesto Calculado</string>
+    <string name="link_budget_result_description">El enlace debería funcionar correctamente si los sitios están en una línea de visión clara.</string>
 
     <string name="tittlelinkbudgetuptohundred">Excelente</string>
     <string name="inkbudgetuptohundreddescription">Tienes un amplio margen de señal, asegurando una conexión estable y de alta calidad, capaz de manejar interferencias.</string>
@@ -76,9 +78,11 @@
     <string name="rb_wire_6">UTP CAT6(0.06db/m)</string>
     <string name="rb_wire_6a">UTP CAT6a(0.05db/m)</string>
     <string name="dialog_button_text">Aceptar</string>
+    <string name="rb_button_none_option">Ninguna</string>
+    <string name="tv_formula_tittle">Formula Utilizada</string>
 
 
-    <string name="fresnel_result_description">Máximo radio en metros de la primera zona de Fresnel.</string>
+    <string name="fresnel_result_description">La altura maxima del obstaculo debe ser: </string>
     <string name="free_space_description">La pérdida en el espacio libre (FSL o FSPL) es la atenuación de la energía de radio que se produce cuando viaja por el aire entre dos antenas</string>
 
 </resources>

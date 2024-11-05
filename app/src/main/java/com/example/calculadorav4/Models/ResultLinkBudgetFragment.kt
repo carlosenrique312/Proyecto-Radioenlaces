@@ -1,4 +1,4 @@
-package com.example.calculadorav4
+package com.example.calculadorav4.Models
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
+import com.example.calculadorav4.R
 import com.example.calculadorav4.databinding.FragmentResultLinkBudgetBinding
 
 
@@ -37,30 +38,15 @@ class ResultLinkBudgetFragment : Fragment() {
 
     private fun initUI(result: Double) {
         binding.tvResultLinkBudget.text = result.toString()
-        when (result) {
-            in 0.00..99.99 -> {
-                binding.tvRangeLink.text = getString(R.string.tittlelinkbudgetunderhundred)
-                binding.tvRangeLink.setTextColor(
-                    ContextCompat.getColor(
-                        requireContext(),
-                        R.color.blue
-                    )
-                )
-                binding.tvLinkDescription.text =
-                    getString(R.string.inkbudgetunderhundreddescription)
-            }
-
-            in 100.00..1000.00 -> {
-                binding.tvRangeLink.text = getString(R.string.tittlelinkbudgetuptohundred)
-                binding.tvRangeLink.setTextColor(
-                    ContextCompat.getColor(
-                        requireContext(),
-                        R.color.red
-                    )
-                )
-                binding.tvLinkDescription.text = getString(R.string.inkbudgetuptohundreddescription)
-            }
-        }
+        binding.tvRangeLink.text = getString(R.string.tittle_link_budget_result)
+        binding.tvRangeLink.setTextColor(
+            ContextCompat.getColor(
+                requireContext(),
+                R.color.blue
+            )
+        )
+        binding.tvLinkDescription.text =
+            getString(R.string.link_budget_result_description)
     }
 
 }

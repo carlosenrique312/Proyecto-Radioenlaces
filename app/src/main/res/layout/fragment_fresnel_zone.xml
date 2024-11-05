@@ -1,76 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/primary"
-    android:gravity="center"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginVertical="20dp"
-        android:gravity="center"
-        android:text="@string/fresnel_zone_tittle"
-        style="@style/tv_tittle_link_budget_style"/>
-
-
-    <androidx.cardview.widget.CardView
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/main"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="15dp"
-        android:backgroundTint="@color/primary_dark"
-        app:cardCornerRadius="30dp">
+        android:background="@color/primary"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
+        <TextView
+            android:id="@+id/tvTittleFresnel"
+            style="@style/tv_tittle_link_budget_style"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp">
+            android:text="@string/fresnel_zone_tittle" />
 
+        <ImageView
+            android:id="@+id/img_fresnel_zone"
+            android:layout_width="350dp"
+            android:layout_height="200dp"
+            android:contentDescription="@string/fresnel_zone_tittle"
+            android:src="@drawable/img_fresnel_zone" />
 
-            <ImageView
-                android:id="@+id/img_fresnel_zone"
+        <TextView
+            android:id="@+id/tvTittleFormules"
+            style="@style/tv_tittle_link_budget_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_formula_tittle" />
+
+        <ImageView
+            android:id="@+id/img_equation_fresnel"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:contentDescription="@string/fresnel_zone_tittle"
+            android:src="@drawable/ic_equation_fresnel"
+            app:tint="@color/accent" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewOne"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            app:cardBackgroundColor="@color/primary_dark"
+            app:cardCornerRadius="20dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="wrap_content"
-                android:layout_height="240dp"
-                android:contentDescription="@string/fresnel_zone_tittle"
-                android:src="@drawable/img_fresnel_zone"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp">
 
-            <EditText
-                android:id="@+id/first_distance_fresnel_zone"
-                android:layout_width="wrap_content"
-                android:layout_height="48dp"
-                android:hint="@string/fresnel_zone_first_distance_edit_text"
-                android:importantForAutofill="no"
-                android:inputType="text"
-                style="@style/edit_text_link_budget_style"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/img_fresnel_zone" />
+                <EditText
+                    android:id="@+id/first_distance_fresnel_zone"
+                    style="@style/edit_text_link_budget_style"
+                    android:layout_width="250dp"
+                    android:layout_height="48dp"
+                    android:hint="@string/fresnel_zone_first_distance_edit_text"
+                    android:importantForAutofill="no"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-            <Spinner
-                android:id="@+id/spinner_frecuency_free_space"
-                android:layout_width="wrap_content"
-                android:layout_height="50dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/first_distance_fresnel_zone" />
+                <EditText
+                    android:id="@+id/second_distance_fresnel_zone"
+                    style="@style/edit_text_link_budget_style"
+                    android:layout_width="250dp"
+                    android:layout_height="48dp"
+                    android:hint="@string/fresnel_zone_second_distance_edit_text"
+                    android:importantForAutofill="no"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/first_distance_fresnel_zone" />
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+                <Spinner
+                    android:id="@+id/spinner_frequency_fresnel"
+                    android:layout_width="250dp"
+                    android:layout_height="48dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/second_distance_fresnel_zone" />
 
-    </androidx.cardview.widget.CardView>
+                <Button
+                    android:id="@+id/btnFresnelZoneCalculate"
+                    style="@style/btn_datasheet_link_budget_style"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fresnel_zone_calculate_button"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/spinner_frequency_fresnel" />
 
-    <Button
-        android:id="@+id/btnFresnelZoneCalculate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        style="@style/btn_datasheet_link_budget_style"
-        android:text="@string/fresnel_zone_calculate_button" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
-</LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>

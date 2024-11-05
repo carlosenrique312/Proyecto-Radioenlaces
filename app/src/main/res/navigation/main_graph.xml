@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/linkBudgetFragment"
-        android:name="com.example.calculadorav4.LinkBudgetFragment"
+        android:name="com.example.calculadorav4.Models.LinkBudgetFragment"
         android:label="fragment_link_budget"
         tools:layout="@layout/fragment_link_budget" >
         <action
@@ -19,7 +19,7 @@
     </fragment>
     <fragment
         android:id="@+id/freeSpaceFragment"
-        android:name="com.example.calculadorav4.FreeSpaceFragment"
+        android:name="com.example.calculadorav4.Models.FreeSpaceFragment"
         android:label="fragment_free_space"
         tools:layout="@layout/fragment_free_space" >
         <action
@@ -28,7 +28,7 @@
     </fragment>
     <fragment
         android:id="@+id/fresnelZoneFragment"
-        android:name="com.example.calculadorav4.FresnelZoneFragment"
+        android:name="com.example.calculadorav4.Models.FresnelZoneFragment"
         android:label="fragment_fresnel_zone"
         tools:layout="@layout/fragment_fresnel_zone" >
         <action
@@ -37,15 +37,15 @@
     </fragment>
     <fragment
         android:id="@+id/fresnelZoneResultFragment"
-        android:name="com.example.calculadorav4.FresnelZoneResultFragment"
+        android:name="com.example.calculadorav4.Models.FresnelZoneResultFragment"
         android:label="fragment_fresnel_zone_result"
         tools:layout="@layout/fragment_fresnel_zone_result" />
     <fragment
         android:id="@+id/resultSpaceLossFragment"
-        android:name="com.example.calculadorav4.ResultSpaceLossFragment"
+        android:name="com.example.calculadorav4.Models.ResultSpaceLossFragment"
         android:label="ResultSpaceLossFragment" />
     <fragment
         android:id="@+id/resultLinkBudgetFragment"
-        android:name="com.example.calculadorav4.ResultLinkBudgetFragment"
+        android:name="com.example.calculadorav4.Models.ResultLinkBudgetFragment"
         android:label="ResultLinkBudgetFragment" />
 </navigation>

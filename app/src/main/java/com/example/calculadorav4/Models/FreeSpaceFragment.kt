@@ -1,4 +1,4 @@
-package com.example.calculadorav4
+package com.example.calculadorav4.Models
 
 import android.os.Bundle
 import android.util.Log
@@ -9,6 +9,7 @@ import android.widget.ArrayAdapter
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
+import com.example.calculadorav4.R
 import com.example.calculadorav4.databinding.FragmentFreeSpaceBinding
 import java.text.DecimalFormat
 
@@ -57,8 +58,7 @@ class FreeSpaceFragment : Fragment() {
     private fun createSpinner() {
         //val frequencies = arrayOf("2.4GHz", "5.8GHz")
         val adapter = ArrayAdapter(
-            requireContext(),
-            androidx.appcompat.R.layout.support_simple_spinner_dropdown_item,
+            requireContext(), R.layout.dropdown_item_project,
             resources.getStringArray(R.array.frequencies)
         )
         binding.spinnerFrequencyFreeSpace.adapter = adapter
@@ -83,7 +83,7 @@ class FreeSpaceFragment : Fragment() {
 
     private fun validateInput(): Boolean {
         val distanceText = binding.distanceFreeSpace.text.toString()
-        val frequencyText = binding.spinnerFrequencyFreeSpace.selectedItem.toString()
+        //val frequencyText = binding.spinnerFrequencyFreeSpace.selectedItem.toString()
 
         // Comprobar si el campo de distancia está vacío
         if (distanceText.isEmpty()) {

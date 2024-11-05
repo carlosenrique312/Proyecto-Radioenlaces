@@ -1,4 +1,4 @@
-package com.example.calculadorav4
+package com.example.calculadorav4.Models
 
 import android.content.Intent
 import android.net.Uri
@@ -14,6 +14,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
+import com.example.calculadorav4.R
 import com.example.calculadorav4.databinding.FragmentLinkBudgetBinding
 
 
@@ -143,13 +144,20 @@ class LinkBudgetFragment : Fragment() {
 
         val radioGroup = dialogView.findViewById<RadioGroup>(R.id.rgCategories)
         val btnAddTask = dialogView.findViewById<Button>(R.id.btnAddTask)
-        val etMeters=dialogView.findViewById<EditText>(R.id.etMeters)
+        val etMeters = dialogView.findViewById<EditText>(R.id.etMeters)
 
         val dialog = dialogBuilder.create()
 
         btnAddTask.setOnClickListener {
             val selectedId = radioGroup.checkedRadioButtonId
-            val metersUser=etMeters.text.toString().toDouble()
+            val metersUser = etMeters.text.toString().trim()
+
+            // Validar que el campo no esté vacío y contenga solo números (enteros o decimales)
+            if (metersUser.isEmpty() || !isValidNumber(metersUser)) {
+                Toast.makeText(requireContext(), "Por favor, ingrese un número válido.", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
+
             val selectedValue = when (selectedId) {
                 R.id.rbCAT5 -> 0.08
                 R.id.rbCAT5e -> 0.07
@@ -157,12 +165,15 @@ class LinkBudgetFragment : Fragment() {
                 R.id.rbCAT6a -> 0.05
                 else -> 0.0
             }
+
+            val meters = metersUser.toDouble()
             if (buttonNumber == 1) {
-                lossPerMeter = metersUser*selectedValue
+                lossPerMeter = meters * selectedValue
             } else if (buttonNumber == 2) {
-                otherLossPerMeter = metersUser*selectedValue
+                otherLossPerMeter = meters * selectedValue
             }
-            dialog.dismiss()
+
+            dialog.dismiss() // Solo se cierra si la validación es exitosa
             Log.d("DialogValue", "Loss per meter: $lossPerMeter")
             Log.d("DialogValue", "Loss per meter: $otherLossPerMeter")
             Toast.makeText(requireContext(), "Valor seleccionado: $lossPerMeter", Toast.LENGTH_SHORT).show()
@@ -170,6 +181,12 @@ class LinkBudgetFragment : Fragment() {
 
         dialog.show()
     }
+
+    // Función para validar si el texto es un número válido (entero o decimal)
+    private fun isValidNumber(text: String): Boolean {
+        return text.matches("^[0-9]*\\.?[0-9]+$".toRegex()) // Acepta números enteros y decimales
+    }
+
 
     private fun navigateToResult(result: Double) {
         val bundle = Bundle()
@@ -183,8 +200,7 @@ class LinkBudgetFragment : Fragment() {
     private fun getDoubleFromTextInputEditText(fact: EditText): Double? {
         val inputText = fact.text.toString()
         return if (inputText.isEmpty()) {
-            //Toast.makeText(fact.context, "El campo no puede estar vacío", Toast.LENGTH_SHORT).show()
-            null // Retorna null si el campo está vacío
+            null
         } else {
             inputText.toDouble()
         }
@@ -197,7 +213,6 @@ class LinkBudgetFragment : Fragment() {
         val RxReceiver = getDoubleFromTextInputEditText(binding.etReceiverSensitivity)
         val SpaceLoss = getDoubleFromTextInputEditText(binding.etFreeSpaceLoss)
 
-        // Verifica que todos los valores sean válidos
         if (TxOutputPower != null && TxAntennaGain != null && RxAntennaGain != null &&
             RxReceiver != null && SpaceLoss != null
         ) {
@@ -207,7 +222,6 @@ class LinkBudgetFragment : Fragment() {
             PireA -= RxReceiver
             return PireA
         } else {
-            //Toast.makeText(binding.root.context, "Datos no válidos", Toast.LENGTH_SHORT).show()
             return null // O puedes manejar el caso de otra manera
         }
     }
