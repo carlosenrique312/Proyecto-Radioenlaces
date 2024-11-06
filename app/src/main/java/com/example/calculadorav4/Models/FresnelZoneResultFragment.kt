@@ -37,7 +37,7 @@ class FresnelZoneResultFragment : Fragment() {
 
     private fun initUI(result: Double) {
         val df = DecimalFormat("#.##")
-        binding.tvTittleResultFresnel.text="Radio Calculado"
+        binding.tvTittleResultFresnel.text=getString(R.string.tittle_result_fresnel_zone)
         binding.tvFresnelResult.text = "${result} m"
         binding.tvDescriptionFresnel.text = "${getString(R.string.fresnel_result_description)} ${df.format(result * 0.60)} m"
     }

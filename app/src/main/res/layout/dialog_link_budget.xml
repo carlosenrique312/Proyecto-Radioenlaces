@@ -15,7 +15,7 @@
             android:id="@+id/rbCAT5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/rb_wire_5"
+            android:text="@string/link_budget_dialog_wire_5"
             android:checked="true"
             android:textColor="@color/accent"
             android:buttonTint="@color/red"/>
@@ -24,7 +24,7 @@
             android:id="@+id/rbCAT5e"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/rb_wire_5e"
+            android:text="@string/link_budget_dialog_wire_5e"
             android:textColor="@color/accent"
             android:buttonTint="@color/blue"/>
 
@@ -32,7 +32,7 @@
             android:id="@+id/rbCAT6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/rb_wire_6"
+            android:text="@string/link_budget_dialog_wire_6"
             android:textColor="@color/accent"
             android:buttonTint="@color/secondary"/>
 
@@ -40,7 +40,7 @@
             android:id="@+id/rbCAT6a"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/rb_wire_6a"
+            android:text="@string/link_budget_dialog_wire_6a"
             android:textColor="@color/accent"
             android:buttonTint="@color/secondary"/>
 
@@ -49,18 +49,18 @@
     <EditText
         android:id="@+id/etMeters"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:inputType="text"
         android:importantForAutofill="no"
         android:textAlignment="center"
-        android:hint="Metros de cable"
+        android:hint="@string/link_budget_dialog_meters"
         android:maxLength="5"/>
 
     <Button
         android:id="@+id/btnAddTask"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/dialog_button_text"
+        android:text="@string/link_budget_dialog_button_accept"
         style="@style/btn_datasheet_link_budget_style"/>
 
 </LinearLayout>

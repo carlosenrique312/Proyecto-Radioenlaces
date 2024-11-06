@@ -29,11 +29,6 @@ class ResultLinkBudgetFragment : Fragment() {
         if (result != null) {
             initUI(result)
         }
-        initListeners()
-    }
-
-    private fun initListeners() {
-        //binding.btnRecalculateLink.setOnClickListener { onBackPressed() }
     }
 
     private fun initUI(result: Double) {
@@ -46,7 +41,7 @@ class ResultLinkBudgetFragment : Fragment() {
             )
         )
         binding.tvLinkDescription.text =
-            getString(R.string.link_budget_result_description)
+            getString(R.string.description_link_budget_result)
     }
 
 }

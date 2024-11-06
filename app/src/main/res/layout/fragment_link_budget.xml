@@ -34,7 +34,7 @@
                     style="@style/tv_tittle_link_budget_style"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/radio_link_transmission"
+                    android:text="@string/radio_link_transmission_tittle"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"/>
 
@@ -65,7 +65,7 @@
                     style="@style/btn_datasheet_link_budget_style"
                     android:layout_width="wrap_content"
                     android:layout_height="48dp"
-                    android:text="@string/button_wire"
+                    android:text="@string/radio_link_transmission_wire_loss"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/etAntennaGain" />
 
@@ -83,28 +83,28 @@
                         android:id="@+id/rbTransmissionRDRP"
                         android:layout_width="wrap_content"
                         android:layout_height="48dp"
-                        android:text="@string/Rocket_Dish_5G34_and_Rocket_Prism_5AC"
+                        android:text="@string/link_budget_antenna_rocket_dish_5G34_and_rocket_prism_5AC"
                         android:textSize="11sp" />
 
                     <RadioButton
                         android:id="@+id/rbTransmissionLB"
                         android:layout_width="wrap_content"
                         android:layout_height="48dp"
-                        android:text="@string/LiteBeam_5AC"
+                        android:text="@string/link_budget_antenna_lite_beam_5AC"
                         android:textSize="11sp" />
 
                     <RadioButton
                         android:id="@+id/rbTransmissionPB"
                         android:layout_width="wrap_content"
                         android:layout_height="48dp"
-                        android:text="@string/PowerBeam_5AC"
+                        android:text="@string/link_budget_antenna_power_beam_5AC"
                         android:textSize="11sp" />
 
                     <RadioButton
                         android:id="@+id/rbTransmissionNone"
                         android:layout_width="wrap_content"
                         android:layout_height="48dp"
-                        android:text="@string/rb_button_none_option"
+                        android:text="@string/link_budget_antenna_none_option"
                         android:textSize="11sp" />
                 </RadioGroup>
 
@@ -113,7 +113,7 @@
                     style="@style/btn_datasheet_link_budget_style"
                     android:layout_width="wrap_content"
                     android:layout_height="48dp"
-                    android:text="@string/radio_link_transmission_datasheet"
+                    android:text="@string/radio_link_datasheet"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@id/etOutputPower"
                     app:layout_constraintTop_toBottomOf="@id/rdTransmissionAntennas" />
@@ -139,7 +139,7 @@
                     style="@style/tv_tittle_link_budget_style"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/radio_link_propagation"
+                    android:text="@string/radio_link_propagation_tittle"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -160,7 +160,7 @@
                     android:id="@+id/tvNavFreeSpace"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/text_calculate_here"
+                    android:text="@string/link_budget_calculate_free_space"
                     android:textColor="@color/secondary"
                     android:textSize="11sp"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -188,7 +188,7 @@
                     style="@style/tv_tittle_link_budget_style"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/radio_link_recepcion"
+                    android:text="@string/radio_link_reception_tittle"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
@@ -219,7 +219,7 @@
                     style="@style/btn_datasheet_link_budget_style"
                     android:layout_width="wrap_content"
                     android:layout_height="48dp"
-                    android:text="@string/button_wire"
+                    android:text="@string/radio_link_reception_wire_loss"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/etReceiverSensitivity" />
 
@@ -237,28 +237,28 @@
                         android:id="@+id/rbReceptionRDRP"
                         android:layout_width="wrap_content"
                         android:layout_height="48dp"
-                        android:text="@string/Rocket_Dish_5G34_and_Rocket_Prism_5AC"
+                        android:text="@string/link_budget_antenna_rocket_dish_5G34_and_rocket_prism_5AC"
                         android:textSize="11sp" />
 
                     <RadioButton
                         android:id="@+id/rbReceptionLB"
                         android:layout_width="wrap_content"
                         android:layout_height="48dp"
-                        android:text="@string/LiteBeam_5AC"
+                        android:text="@string/link_budget_antenna_lite_beam_5AC"
                         android:textSize="11sp" />
 
                     <RadioButton
                         android:id="@+id/rbReceptionPB"
                         android:layout_width="wrap_content"
                         android:layout_height="48dp"
-                        android:text="@string/PowerBeam_5AC"
+                        android:text="@string/link_budget_antenna_power_beam_5AC"
                         android:textSize="11sp" />
 
                     <RadioButton
                         android:id="@+id/rbReceptionNone"
                         android:layout_width="wrap_content"
                         android:layout_height="48dp"
-                        android:text="@string/rb_button_none_option"
+                        android:text="@string/link_budget_antenna_none_option"
                         android:textSize="11sp" />
                 </RadioGroup>
 
@@ -268,7 +268,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="48dp"
                     android:layout_marginStart="15dp"
-                    android:text="@string/radio_link_transmission_datasheet"
+                    android:text="@string/radio_link_datasheet"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@id/etReceiverSensitivity"
                     app:layout_constraintTop_toBottomOf="@id/rdReceptionAntennas" />

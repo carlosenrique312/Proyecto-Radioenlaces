@@ -31,15 +31,15 @@ class ResultSpaceLossFragment : Fragment() {
     }
 
     private fun initUI(result: Double) {
-        binding.tvFsl.text = result.toString()
-        binding.tvRangeFsl.text = getString(R.string.tittlefslunderfifty)
-        binding.tvRangeFsl.setTextColor(
+        binding.tvResultFreeSpace.text = result.toString()
+        binding.tvTittleResultFreeSpace.text = getString(R.string.tittle_result_free_space_loss)
+        binding.tvTittleResultFreeSpace.setTextColor(
             ContextCompat.getColor(
                 requireContext(),
                 R.color.blue
             )
         )
-        binding.tvFslDescription.text = getString(R.string.underfiftydescription)
+        binding.tvFslDescription.text = getString(R.string.description_result_free_space_loss)
     }
 
 }

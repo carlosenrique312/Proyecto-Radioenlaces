@@ -3,7 +3,7 @@
 
     <item
         android:id="@+id/linkBudgetFragment"
-        android:title="@string/linkbudget_menu_tittle"
+        android:title="@string/link_budget_menu_tittle"
         android:icon="@drawable/ic_link_budget"/>
 
     <item
