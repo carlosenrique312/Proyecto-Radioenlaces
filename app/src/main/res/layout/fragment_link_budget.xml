@@ -161,7 +161,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/link_budget_calculate_free_space"
-                    android:textColor="@color/secondary"
+                    android:textColor="@color/nav_free_space_color"
                     android:textSize="11sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"

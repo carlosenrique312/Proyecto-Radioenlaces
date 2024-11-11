@@ -32,7 +32,7 @@ class ResultLinkBudgetFragment : Fragment() {
     }
 
     private fun initUI(result: Double) {
-        binding.tvResultLinkBudget.text = result.toString()
+        binding.tvResultLinkBudget.text = "${result} db"
         binding.tvRangeLink.text = getString(R.string.tittle_link_budget_result)
         binding.tvRangeLink.setTextColor(
             ContextCompat.getColor(

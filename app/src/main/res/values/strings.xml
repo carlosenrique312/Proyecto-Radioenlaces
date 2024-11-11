@@ -2,6 +2,7 @@
 
     <string name="app_name">Radioenlaces App</string>
 
+    <!-- Modulo Presupuesto Radioenlace. -->
     <string name="radio_link_view_tittle">Presupuesto de radio enlace</string>
     <string name="radio_link_transmission_tittle">Trasmision</string>
     <string name="radio_link_transmission_output_power">Potencia del Radio</string>
@@ -19,7 +20,19 @@
     <string name="tittle_link_budget_result">Presupuesto Calculado</string>
     <string name="description_link_budget_result">El enlace debería funcionar correctamente si los sitios están en una línea de visión clara.</string>
     <string name="link_budget_calculate_free_space">Calcular aqui</string>
-
+    <!-- Modulo Presupuesto Radioenlace ListaAntenas. -->
+    <string name="link_budget_antenna_rocket_dish_5G34_and_rocket_prism_5AC">Rocket Dish 5G34 + Rocket Prism 5AC GEN2</string>
+    <string name="link_budget_antenna_lite_beam_5AC">LiteBeam 5AC</string>
+    <string name="link_budget_antenna_power_beam_5AC">PowerBeam 5AC</string>
+    <string name="link_budget_antenna_none_option">Ninguna</string>
+    <!-- Modulo Presupuesto Radioenlace Ventana Emergente Perdida de cable. -->
+    <string name="link_budget_dialog_wire_5">UTP CAT5(0.08db/m)</string>
+    <string name="link_budget_dialog_wire_5e">UTP CAT5e(0.07db/m)</string>
+    <string name="link_budget_dialog_wire_6">UTP CAT6(0.06db/m)</string>
+    <string name="link_budget_dialog_wire_6a">UTP CAT6a(0.05db/m)</string>
+    <string name="link_budget_dialog_meters">Metros</string>
+    <string name="link_budget_dialog_button_accept">Aceptar</string>
+    <!-- Modulo Perdida de espacio libre. -->
     <string name="free_space_calculate">Calcular</string>
     <string name="free_space_distance">DIstancia (Km)</string>
     <string name="free_space_tittle">Perdida en espacio libre</string>
@@ -27,7 +40,7 @@
     <string name="tittle_result_free_space_loss">Resultado Perdida Espacio Libre </string>
     <string name="description_result_free_space_loss">La conexión es de buena calidad, lo que permite una comunicación clara y rápida.</string>
     <string name="free_space_description">La pérdida en el espacio libre es la atenuación de la energía de radio al viajar por el aire entre dos antenas.</string>
-
+    <!-- Modulo Zona Fresnel. -->
     <string name="fresnel_zone_tittle">Cálculo de la zona Fresnel</string>
     <string name="fresnel_zone_first_distance">Distancia trasmisor al obstaculo (Km)</string>
     <string name="fresnel_zone_second_distance">Distancia receptor al obstaculo (Km)</string>
@@ -35,25 +48,14 @@
     <string name="fresnel_result_description">La altura maxima del obstaculo debe ser: </string>
     <string name="fresnel_zone_equation_tittle">Formula Utilizada</string>
     <string name="tittle_result_fresnel_zone">Radio Calculado</string>
-
+    <!-- Menu de la aplicacion. -->
     <string name="link_budget_menu_tittle">Enlaces</string>
     <string name="free_space_menu_tittle">Espacio</string>
     <string name="fresnel_menu_tittle">Fresnel</string>
 
     <string name="tittle_result">Tu Resultado</string>
 
-    <string name="link_budget_antenna_rocket_dish_5G34_and_rocket_prism_5AC">Rocket Dish 5G34 + Rocket Prism 5AC GEN2</string>
-    <string name="link_budget_antenna_lite_beam_5AC">LiteBeam 5AC</string>
-    <string name="link_budget_antenna_power_beam_5AC">PowerBeam 5AC</string>
-    <string name="link_budget_antenna_none_option">Ninguna</string>
-
-    <string name="link_budget_dialog_wire_5">UTP CAT5(0.08db/m)</string>
-    <string name="link_budget_dialog_wire_5e">UTP CAT5e(0.07db/m)</string>
-    <string name="link_budget_dialog_wire_6">UTP CAT6(0.06db/m)</string>
-    <string name="link_budget_dialog_wire_6a">UTP CAT6a(0.05db/m)</string>
-    <string name="link_budget_dialog_meters">Metros</string>
-    <string name="link_budget_dialog_button_accept">Aceptar</string>
-
+    <!-- Listado de Frecuencias -->
     <string-array name="frequencies">
         <item>900MHz</item>
         <item>2400MHz</item>

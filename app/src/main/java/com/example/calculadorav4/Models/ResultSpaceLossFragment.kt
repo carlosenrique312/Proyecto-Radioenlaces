@@ -31,7 +31,7 @@ class ResultSpaceLossFragment : Fragment() {
     }
 
     private fun initUI(result: Double) {
-        binding.tvResultFreeSpace.text = result.toString()
+        binding.tvResultFreeSpace.text = "${result} db"
         binding.tvTittleResultFreeSpace.text = getString(R.string.tittle_result_free_space_loss)
         binding.tvTittleResultFreeSpace.setTextColor(
             ContextCompat.getColor(

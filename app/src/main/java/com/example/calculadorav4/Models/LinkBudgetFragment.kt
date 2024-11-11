@@ -17,7 +17,6 @@ import androidx.navigation.fragment.findNavController
 import com.example.calculadorav4.R
 import com.example.calculadorav4.databinding.FragmentLinkBudgetBinding
 
-
 class LinkBudgetFragment : Fragment() {
 
     private var otherLossPerMeter: Double = 0.0
@@ -114,20 +113,12 @@ class LinkBudgetFragment : Fragment() {
             binding.rbTransmissionRDRP.isChecked -> openWebPage("https://dl.ubnt.com/datasheets/rocketdish/rd_ds_web.pdf")
             binding.rbTransmissionLB.isChecked -> openWebPage("https://dl.ubnt.com/datasheets/LiteBeam/LiteBeam_AC_Gen2_DS.pdf")
             binding.rbTransmissionPB.isChecked -> openWebPage("https://dl.ubnt.com/datasheets/PowerBeam_ac/PowerBeam5ac_DS.pdf")
-            binding.rbTransmissionNone.isChecked -> Toast.makeText(
-                requireContext(),
-                "Por favor, selecciona una checkbox",
-                Toast.LENGTH_SHORT
-            ).show()
+            binding.rbTransmissionNone.isChecked -> Toast.makeText(requireContext(), "Por favor, selecciona una checkbox", Toast.LENGTH_SHORT).show()
 
             binding.rbReceptionRDRP.isChecked -> openWebPage("https://dl.ubnt.com/datasheets/rocketdish/rd_ds_web.pdf")
             binding.rbReceptionLB.isChecked -> openWebPage("https://dl.ubnt.com/datasheets/LiteBeam/LiteBeam_AC_Gen2_DS.pdf")
             binding.rbReceptionPB.isChecked -> openWebPage("https://dl.ubnt.com/datasheets/PowerBeam_ac/PowerBeam5ac_DS.pdf")
-            binding.rbReceptionNone.isChecked -> Toast.makeText(
-                requireContext(),
-                "Por favor, selecciona una checkbox",
-                Toast.LENGTH_SHORT
-            ).show()
+            binding.rbReceptionNone.isChecked -> Toast.makeText(requireContext(), "Por favor, selecciona una checkbox", Toast.LENGTH_SHORT).show()
         }
     }
 
@@ -172,11 +163,10 @@ class LinkBudgetFragment : Fragment() {
             } else if (buttonNumber == 2) {
                 otherLossPerMeter = meters * selectedValue
             }
-
-            dialog.dismiss() // Solo se cierra si la validación es exitosa
+            dialog.dismiss()
             Log.d("DialogValue", "Loss per meter: $lossPerMeter")
             Log.d("DialogValue", "Loss per meter: $otherLossPerMeter")
-            Toast.makeText(requireContext(), "Valor seleccionado: $lossPerMeter", Toast.LENGTH_SHORT).show()
+
         }
 
         dialog.show()
@@ -222,7 +212,7 @@ class LinkBudgetFragment : Fragment() {
             PireA -= RxReceiver
             return PireA
         } else {
-            return null // O puedes manejar el caso de otra manera
+            return null
         }
     }
 }

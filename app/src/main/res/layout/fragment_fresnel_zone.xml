@@ -33,7 +33,7 @@
             style="@style/tv_tittle_link_budget_style"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/tv_formula_tittle" />
+            android:text="@string/fresnel_zone_equation_tittle"/>
 
         <ImageView
             android:id="@+id/img_equation_fresnel"

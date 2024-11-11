@@ -10,4 +10,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="first_combine_color">#076007</color>
     <color name="second_combine_color">#FF000000</color>
+    <color name="nav_free_space_color">#076007</color>
 </resources>
